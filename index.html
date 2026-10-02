@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capital Survey and Mapping Pakistan | Surveying, Quantity Surveying & Mapping</title>
+<meta name="description" content="Surveying, quantity surveying and mapping support for civil engineering, construction and infrastructure projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--ink:#1d2530;--navy:#0c1f3a;--navy2:#13305a;--cu:#b2652f;--teal:#1f7a7a;--line:#d9d4c8;--mut:#566070;--card:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1424;--ink:#e9e6df;--navy:#050c18;--navy2:#13305a;--cu:#d98a52;--teal:#4fb3b3;--line:#24344e;--mut:#9aa7ba;--card:#101e35}}
+*,*:before,*:after{box-sizing:inherit}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,6vw,4.2rem);font-weight:800}h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700}h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em;max-width:68ch}a{color:inherit}
+:focus-visible{outline:3px solid var(--cu);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:9;background:var(--navy);color:#f2efe8;padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 .95rem Archivo,sans-serif;text-decoration:none;letter-spacing:.02em}.logo i{color:var(--cu);font-style:normal}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 11px;text-decoration:none;font-size:.95rem;border-radius:4px}
+nav a:hover,nav a[aria-current=page]{background:rgba(255,255,255,.1)}nav a[aria-current=page]{box-shadow:inset 0 -2px var(--cu)}
+#mb{display:none;background:none;border:1px solid #fff5;color:#fff;padding:8px 14px;border-radius:4px;font:inherit}
+@media(max-width:900px){#mb{display:block}nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);display:none;padding:8px 20px 16px}nav.open{display:block}nav ul{flex-direction:column}}
+.btn{display:inline-block;padding:13px 22px;border-radius:4px;background:var(--cu);color:#fff;font:700 .98rem Archivo,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.1)}.btn.o{background:none;border:1.5px solid currentColor}
+.hero{background:var(--navy);color:#f2efe8;position:relative;overflow:hidden;padding:84px 0 96px}
+.hero svg.bg{position:absolute;right:-6%;top:0;height:100%;width:70%;opacity:.5}
+.hero .wrap{position:relative}.hero p{font-size:1.2rem;color:#cdd6e4;max-width:56ch}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.creds{margin-top:44px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:.95rem;color:#aebbd0;border-top:1px solid #ffffff26;padding-top:18px}
+.coord{font:.78rem ui-monospace,monospace;color:var(--cu);margin-bottom:14px}
+section.s{padding:68px 0}.alt{background:var(--card);border-block:1px solid var(--line)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--cu);padding:22px}
+.alt .card{background:var(--bg)}
+.two{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.draft{display:inline-block;font-size:.78rem;border:1px solid var(--teal);color:var(--teal);padding:1px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.svc{border-top:1px solid var(--line);padding:22px 0;display:grid;gap:8px 32px;grid-template-columns:minmax(200px,1fr) 2fr}
+@media(max-width:700px){.svc{grid-template-columns:1fr}}
+.svc p{margin:0 0 .5em}.svc b{font-weight:600}
+.note{font-size:.9rem;color:var(--mut);border-left:3px solid var(--teal);padding:6px 12px;margin:20px 0}
+.map{border:1px solid var(--line);background:#eef2f3;color:#1d2530}.cap{font-size:.85rem;color:var(--mut);margin-top:6px}
+.slides{border:1px solid var(--line);background:var(--card)}
+.sl{padding:24px;min-height:300px}.sl[hidden]{display:none}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 24px;border-top:1px solid var(--line);background:var(--bg)}
+.ctl button{background:var(--navy);color:#fff;border:0;padding:9px 16px;border-radius:4px;font:inherit;cursor:pointer}.ctl button:disabled{opacity:.4;cursor:default}
+table{border-collapse:collapse;width:100%;font-size:.93rem;display:block;overflow-x:auto}th,td{padding:7px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}td.n,th.n{text-align:right}
+form{display:grid;gap:16px;max-width:680px}label{font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid var(--mut);border-radius:4px;background:var(--card);color:var(--ink)}
+.f2{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.err{color:#b3261e;font-size:.88rem;min-height:1em;display:block}[data-theme=dark] .err,@media(prefers-color-scheme:dark){.err{color:#ff8a80}}
+#status{padding:12px 14px;border:1px solid var(--teal);display:none}
+.hp{position:absolute;left:-9999px}
+footer{background:var(--navy);color:#aebbd0;padding:40px 0;font-size:.92rem}footer a{color:#f2efe8}
+.page{display:none}.page.on{display:block}
+.in{padding:56px 0 8px;background:var(--navy);color:#f2efe8}.in p{color:#cdd6e4;font-size:1.1rem}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:u .8s ease both}@keyframes u{from{opacity:0;transform:translateY(14px)}}}
+</style></head><body>
+<header><div class="wrap bar"><a class="logo" href="#home">Capital Survey <i>and Mapping</i> Pakistan</a>
+<button id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#home">Home</a></li><li><a href="#surveying">Surveying</a></li><li><a href="#qs">Quantity Surveying</a></li><li><a href="#mapping">Mapping &amp; GIS</a></li><li><a href="#instruments">Instruments</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<main id="main">
+
+<div class="page" id="home" data-title="Surveying, Quantity Surveying & Mapping">
+<div class="hero"><svg class="bg" id="hc" viewBox="0 0 600 500" aria-hidden="true" preserveAspectRatio="xMidYMid slice"></svg>
+<div class="wrap"><div class="coord">N 00°00′00″ &nbsp; E 000°00′00″ &nbsp; illustrative grid</div>
+<h1>Precision Surveying. Reliable Quantities. Clear Mapping.</h1>
+<p>Professional surveying, quantity surveying, and mapping support for civil engineering, construction, and infrastructure projects.</p>
+<div class="cta"><a class="btn" href="#contact">Request a Quotation</a><a class="btn o" href="#surveying">Explore Our Services</a></div>
+<div class="creds"><span>For contractors, consultants, developers and government project teams</span><span>Team with 20+ years in civil engineering and construction</span></div></div></div>
+<section class="s"><div class="wrap"><h2>Three disciplines, one coordinated team</h2>
+<p>Capital Survey and Mapping Pakistan supports projects in [CITY, COUNTRY] and [SERVICE AREA]. We turn site measurements into drawings, quantities and maps that engineers and contractors can build, price and manage from.</p>
+<div class="grid">
+<div class="card"><h3>Surveying</h3><p>Topographic, setting-out, as-built, control and GNSS surveys.</p><a href="#surveying">View surveying services</a></div>
+<div class="card"><h3>Quantity Surveying</h3><p>Takeoffs, BOQs, estimates, valuations and variation assessment.</p><a href="#qs">View QS services</a></div>
+<div class="card"><h3>Mapping &amp; GIS</h3><p>Contours, terrain models, plan and profile drawings, GIS-ready data.</p><a href="#mapping">View mapping services</a></div></div></div></section>
+<section class="s alt"><div class="wrap two"><div><h2>Deliverables you can use on day one</h2><p>Every service ends in a defined output: CAD drawings, terrain models, BOQ spreadsheets, cut-and-fill tables and survey reports. Typical outputs are shown on each service page.</p><p><a class="btn" href="#mapping">See a deliverable preview</a></p></div><div><svg class="map" id="mh" viewBox="0 0 400 280" role="img" aria-label="Illustrative contour map preview"></svg><div class="cap">Illustrative deliverable. Not a real site.</div></div></div></section>
+<section class="s"><div class="wrap"><h2>Industries we support</h2><div class="grid">
+<div class="card"><h3>Roads &amp; infrastructure</h3><p>Corridors, utilities, drainage.</p></div><div class="card"><h3>Overhead transmission lines</h3><p>Route and profile survey.</p></div><div class="card"><h3>Industrial facilities</h3><p>Plant layout and as-built records.</p></div><div class="card"><h3>Buildings &amp; developments</h3><p>Setting out and quantities.</p></div></div>
+<p style="margin-top:28px">Instrument types we work with are described on the <a href="#instruments">Instruments page</a>.</p></div></section>
+</div>
+
+<div class="page" id="surveying" data-title="Surveying Services">
+<div class="in"><div class="wrap"><h1>Surveying Services</h1><p>Field measurement and control for design, construction and records.</p></div></div>
+<section class="s"><div class="wrap">
+<p class="note">Services marked <b>draft</b> are proposed offerings pending company confirmation.</p>
+<div class="svc"><h3>Topographic surveys</h3><div><p><b>Purpose:</b> record ground levels and features for design.</p><p><b>Applications:</b> site planning, drainage, road design.</p><p><b>Deliverables:</b> CAD plan, contours, spot levels, point file.</p></div></div>
+<div class="svc"><h3>Construction setting out</h3><div><p><b>Purpose:</b> place design geometry accurately on site.</p><p><b>Applications:</b> foundations, roads, utilities, structures.</p><p><b>Deliverables:</b> marked points, setting-out sheets, check records.</p></div></div>
+<div class="svc"><h3>As-built surveys</h3><div><p><b>Purpose:</b> verify what was built against design.</p><p><b>Applications:</b> handover, claims, record drawings.</p><p><b>Deliverables:</b> as-built drawings, deviation tables.</p></div></div>
+<div class="svc"><h3>Control surveys &amp; benchmark verification</h3><div><p><b>Purpose:</b> establish and check the reference framework.</p><p><b>Applications:</b> all projects needing consistent coordinates and levels.</p><p><b>Deliverables:</b> control coordinate list, level checks, report.</p></div></div>
+<div class="svc"><h3>GNSS / RTK surveys</h3><div><p><b>Purpose:</b> fast positioning with base and rover receivers.</p><p><b>Applications:</b> open-sky topography, stakeout, control densification.</p><p><b>Deliverables:</b> coordinate files, quality summaries.</p></div></div>
+<div class="svc"><h3>Static GNSS &amp; network adjustment <span class="draft">draft</span></h3><div><p><b>Purpose:</b> higher-confidence control from longer observations.</p><p><b>Applications:</b> project control networks.</p><p><b>Deliverables:</b> adjusted coordinates, adjustment report.</p></div></div>
+<div class="svc"><h3>Route &amp; corridor surveys</h3><div><p><b>Purpose:</b> map a linear strip for alignment design.</p><p><b>Applications:</b> roads, pipelines, OHTL, rail.</p><p><b>Deliverables:</b> corridor plan, longitudinal profile, cross-sections.</p></div></div>
+<div class="svc"><h3>Earthwork &amp; stockpile volume surveys</h3><div><p><b>Purpose:</b> measure volumes from surveyed surfaces.</p><p><b>Applications:</b> cut and fill, material stockpiles, progress claims.</p><p><b>Deliverables:</b> surface model, volume report.</p></div></div>
+<p class="note">Accuracy depends on equipment, site conditions, observation procedures and quality control. Project-specific tolerances are agreed in the quotation.</p>
+<a class="btn" href="#contact">Request a Quotation</a></div></section></div>
+
+<div class="page" id="qs" data-title="Quantity Surveying Services">
+<div class="in"><div class="wrap"><h1>Quantity Surveying Services</h1><p>Measured quantities and costs from drawings and survey data.</p></div></div>
+<section class="s"><div class="wrap">
+<div class="grid"><div class="card"><h3>Quantity takeoff</h3><p>Measured from drawings, models or survey surfaces.</p></div><div class="card"><h3>Bills of quantities</h3><p>Structured, itemised and tender-ready.</p></div><div class="card"><h3>Cost estimation</h3><p>Rates applied to measured work.</p></div><div class="card"><h3>Earthwork cut and fill</h3><p>Volumes from existing and design surfaces.</p></div><div class="card"><h3>Concrete, rebar &amp; formwork</h3><p>Volumes, steel weights and contact areas.</p></div><div class="card"><h3>Tender support</h3><p>Documents, clarifications, bid comparison.</p></div><div class="card"><h3>Progress &amp; valuation</h3><p>Quantities for interim payments.</p></div><div class="card"><h3>Variation assessment</h3><p>Quantity change against the contract.</p></div></div>
+<h2 style="margin-top:56px">How an estimate is built</h2>
+<p class="note">All quantities and rates below are illustrative demonstration figures in USD, not market prices.</p>
+<div class="slides" id="sl" aria-roledescription="carousel" aria-label="Estimation process">
+<div class="sl"><h3>1. Drawing review</h3><p>We check drawing sets for completeness, scale, revisions and conflicts before measuring. Missing information is listed as queries.</p><table><tr><th>Item</th><th>Status</th></tr><tr><td>Foundation plan Rev B</td><td>Complete</td></tr><tr><td>Section detail sheet</td><td>Query raised</td></tr></table></div>
+<div class="sl" hidden><h3>2. Quantity measurement</h3><p>Dimensions are taken in a consistent order, with workings kept so every figure can be traced.</p><table><tr><th>Element</th><th>Unit</th><th class="n">Qty</th></tr><tr><td>Strip footing concrete</td><td>m³</td><td class="n">42.0</td></tr><tr><td>Excavation</td><td>m³</td><td class="n">118.5</td></tr></table></div>
+<div class="sl" hidden><h3>3. BOQ preparation</h3><p>Measured items are grouped into bills with descriptions, units and quantities.</p><table><tr><th>Ref</th><th>Description</th><th>Unit</th><th class="n">Qty</th></tr><tr><td>A.1</td><td>Excavate to formation</td><td>m³</td><td class="n">118.5</td></tr><tr><td>B.1</td><td>Concrete grade C30, footings</td><td>m³</td><td class="n">42.0</td></tr></table></div>
+<div class="sl" hidden><h3>4. Rate analysis</h3><p>Rates are built from labour, plant, materials and overheads, using current local inputs supplied or confirmed per project.</p><table><tr><th>Item B.1 build-up</th><th class="n">USD / m³</th></tr><tr><td>Materials (illustrative)</td><td class="n">80</td></tr><tr><td>Labour &amp; plant (illustrative)</td><td class="n">35</td></tr><tr><td>Overhead &amp; profit (illustrative)</td><td class="n">15</td></tr><tr><th>Rate</th><th class="n">130</th></tr></table></div>
+<div class="sl" hidden><h3>5. Cost summary</h3><p>Priced bills roll up to a summary for client review.</p><table><tr><th>Bill</th><th class="n">USD</th></tr><tr><td>A. Earthworks (118.5 × 12)</td><td class="n">1,422</td></tr><tr><td>B. Concrete (42.0 × 130)</td><td class="n">5,460</td></tr><tr><th>Total (illustrative)</th><th class="n">6,882</th></tr></table></div>
+<div class="ctl"><button id="pv">Previous</button><span id="ct" aria-live="polite">Step 1 of 5</span><button id="nx">Next</button></div></div>
+<p style="margin-top:28px"><a class="btn" href="#contact">Request a Quotation</a></p></div></section></div>
+
+<div class="page" id="mapping" data-title="Mapping & GIS Services">
+<div class="in"><div class="wrap"><h1>Mapping &amp; GIS Services</h1><p>Survey data turned into maps, models and drawings.</p></div></div>
+<section class="s"><div class="wrap two"><div>
+<h2>Deliverables</h2>
+<div class="svc" style="grid-template-columns:1fr"><div><p><b>Contour mapping</b> and <b>digital terrain models</b> from survey points.</p><p><b>Plan and profile drawings</b> for roads, pipelines and lines.</p><p><b>GIS data preparation</b> with attribute structure and clean geometry.</p><p><b>Coordinate system and projection management</b> so datasets align.</p><p><b>Georeferenced base maps</b> and <b>CAD and GIS outputs</b> in agreed formats.</p><p>Orthophoto and drone mapping <span class="draft">pending confirmation</span></p></div></div></div>
+<div><svg class="map" id="mm" viewBox="0 0 400 280" role="img" aria-label="Illustrative topographic map with contours, spot heights, grid, legend and scale bar"></svg><div class="cap">Illustrative deliverable. Synthetic data; no real location or accuracy implied.</div></div></div></section>
+<section class="s alt"><div class="wrap"><a class="btn" href="#contact">Request a Quotation</a></div></section></div>
+
+<div class="page" id="instruments" data-title="Instrument Types & Applications">
+<div class="in"><div class="wrap"><h1>Instrument Types &amp; Applications</h1><p>General descriptions of equipment used in surveying. This is not an inventory of our own equipment.</p></div></div>
+<section class="s"><div class="wrap">
+<div class="svc"><h3>Total stations</h3><div><p><b>Measures:</b> horizontal and vertical angles and distances.</p><p><b>Used for:</b> setting out, detail surveys, as-builts.</p><p><b>Components:</b> telescope, EDM, angle encoders, tribrach, prism.</p><p><b>Affects results:</b> setup quality, atmosphere, target centring, calibration.</p><p><b>Outputs:</b> coordinates and field data files.</p></div></div>
+<div class="svc"><h3>GNSS receivers (base / rover)</h3><div><p><b>Measures:</b> satellite signals to compute position.</p><p><b>Used for:</b> control, topography, stakeout.</p><p><b>Components:</b> receiver, antenna, pole, controller, radio or network link.</p><p><b>Affects results:</b> sky view, multipath, observation time, corrections.</p><p><b>Outputs:</b> coordinates with quality indicators.</p></div></div>
+<div class="svc"><h3>Digital and automatic levels</h3><div><p><b>Measures:</b> height differences.</p><p><b>Used for:</b> benchmarks, level runs, floor and formation levels.</p><p><b>Components:</b> level, tripod, staff.</p><p><b>Affects results:</b> collimation, staff verticality, sight lengths, loop closure.</p><p><b>Outputs:</b> reduced levels and misclosure checks.</p></div></div>
+<div class="svc"><h3>Accessories</h3><div><p>Prisms, tripods, poles and staffs link the instrument to the ground point. Their condition and bubble adjustment directly affect results.</p></div></div>
+<div class="svc"><h3>Laser scanners, UAV, GPR <span class="draft">if confirmed</span></h3><div><p>Described only once these are confirmed as offered services.</p></div></div>
+<p class="note">Model-specific specifications should come from manufacturer documentation. Results depend on equipment, site conditions, procedures and quality control. Professional photography will be added once licensed images or supplied photos are available.</p></div></section></div>
+
+<div class="page" id="about" data-title="About Us & Our Team">
+<div class="in"><div class="wrap"><h1>About Us</h1><p>Our professional team brings over 20 years of experience in civil engineering and the construction industry, supporting projects through surveying, quantity surveying, and mapping.</p></div></div>
+<section class="s"><div class="wrap"><h2>Team capabilities</h2><div class="grid">
+<div class="card"><h3>Field survey execution</h3></div><div class="card"><h3>Survey data processing</h3></div><div class="card"><h3>CAD drafting &amp; terrain modelling</h3></div><div class="card"><h3>Quantity measurement &amp; estimation</h3></div><div class="card"><h3>GIS &amp; mapping</h3></div><div class="card"><h3>Technical reporting &amp; quality control</h3></div></div>
+<p class="note" style="margin-top:28px">Named profiles and photos will be added once supplied.</p></div></section></div>
+
+<div class="page" id="contact" data-title="Request a Quotation">
+<div class="in"><div class="wrap"><h1>Request a Quotation</h1><p>Tell us about the project. Email: <a href="mailto:ara.svy@gmail.com">ara.svy@gmail.com</a> &nbsp; Tel / WhatsApp: <a href="tel:+966595255693">+966 59 525 5693</a> (<a href="https://wa.me/966595255693">WhatsApp</a>) &nbsp; <a href="tel:+923336895267">+92 333 689 5267</a> (<a href="https://wa.me/923336895267">WhatsApp</a>)</p></div></div>
+<section class="s"><div class="wrap">
+<form id="qf" novalidate>
+<div class="f2"><div><label for="n">Name</label><input id="n" required autocomplete="name"><span class="err" id="e-n"></span></div><div><label for="c">Company</label><input id="c" autocomplete="organization"></div></div>
+<div class="f2"><div><label for="em">Email</label><input id="em" type="email" required autocomplete="email"><span class="err" id="e-em"></span></div><div><label for="t">Telephone</label><input id="t" type="tel" autocomplete="tel"></div></div>
+<div class="f2"><div><label for="l">Project location</label><input id="l" required><span class="err" id="e-l"></span></div><div><label for="s">Required service</label><select id="s"><option>Surveying</option><option>Quantity Surveying</option><option>Mapping &amp; GIS</option><option>Multiple services</option></select></div></div>
+<div class="f2"><div><label for="a">Approximate area or route length</label><input id="a"></div><div><label for="sc">Preferred schedule</label><input id="sc"></div></div>
+<div><label for="d">Project description</label><textarea id="d" rows="5" required></textarea><span class="err" id="e-d"></span></div>
+<input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit">Prepare my request</button>
+<div id="status" role="status"></div>
+<p class="note">Submission is not yet connected to a server. This button opens your email app with the details filled in; nothing is sent until you press send. Your details are used only to respond to your enquiry.</p></form></div></section></div>
+</main>
+<footer><div class="wrap">Capital Survey and Mapping Pakistan · <a href="tel:+966595255693">+966 59 525 5693</a> (<a href="https://wa.me/966595255693">WhatsApp</a>) &nbsp; <a href="tel:+923336895267">+92 333 689 5267</a> (<a href="https://wa.me/923336895267">WhatsApp</a>) · <a href="mailto:ara.svy@gmail.com">ara.svy@gmail.com</a><br>Privacy: information submitted through the quotation form is used only to respond to your enquiry.</div></footer>
+<script>
+const pages=[...document.querySelectorAll('.page')],links=[...document.querySelectorAll('nav a')];
+function route(){const id=(location.hash||'#home').slice(1);const p=pages.find(x=>x.id===id)||pages[0];
+pages.forEach(x=>x.classList.toggle('on',x===p));links.forEach(a=>a.getAttribute('href')==='#'+p.id?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+document.title=p.dataset.title+' | Capital Survey and Mapping Pakistan';window.scrollTo(0,0);nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}
+const nav=document.getElementById('nav'),mb=document.getElementById('mb');
+mb.onclick=()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)};
+addEventListener('hashchange',route);
+// synthetic contours
+function contours(el,w,h,n,step,sw,labels){let s='';const cx=w*.5,cy=h*.5;
+for(let k=n;k>=1;k--){let d='';const r=k/n;for(let i=0;i<=48;i++){const a=i/48*6.2832;const rad=r*(1+.18*Math.sin(3*a+1)+.1*Math.cos(5*a))*Math.min(w,h)*.5*1.05;const x=cx+Math.cos(a)*rad*1.3,y=cy+Math.sin(a)*rad;d+=(i?'L':'M')+x.toFixed(1)+' '+y.toFixed(1)}
+s+=`<path d="${d}Z" fill="none" stroke="${labels?(k%5===0?'#b2652f':'#1f7a7a'):'#8fa6c4'}" stroke-width="${labels&&k%5===0?1.6:sw}"/>`}
+if(labels){for(let x=40;x<w;x+=80)s+=`<line x1="${x}" y1="0" x2="${x}" y2="${h}" stroke="#9aa7a8" stroke-width=".4"/><text x="${x+2}" y="${h-4}" font-size="8" fill="#566070">E${400+x}</text>`;
+for(let y=40;y<h;y+=80)s+=`<line x1="0" y1="${y}" x2="${w}" y2="${y}" stroke="#9aa7a8" stroke-width=".4"/><text x="3" y="${y-2}" font-size="8" fill="#566070">N${900+y}</text>`;
+[[cx,cy,'112.4'],[cx+70,cy-30,'108.1'],[cx-80,cy+25,'104.6']].forEach(p=>s+=`<circle cx="${p[0]}" cy="${p[1]}" r="1.8" fill="#1d2530"/><text x="${p[0]+4}" y="${p[1]-3}" font-size="8" fill="#1d2530">${p[2]}</text>`)}
+el.innerHTML=s+(labels?`<rect x="8" y="8" width="104" height="38" fill="#fff" stroke="#9aa7a8"/><text x="13" y="21" font-size="8" fill="#1d2530">Contour interval 1 m</text><text x="13" y="33" font-size="8" fill="#1d2530">Index every 5th (copper)</text><text x="13" y="43" font-size="7" fill="#566070">Illustrative</text><path d="M290 262h80" stroke="#1d2530" stroke-width="3"/><text x="290" y="256" font-size="8" fill="#1d2530">0</text><text x="355" y="256" font-size="8" fill="#1d2530">100 m</text>`:'')}
+contours(document.getElementById('hc'),600,500,16,1,1.1,false);
+contours(document.getElementById('mh'),400,280,14,1,1,true);contours(document.getElementById('mm'),400,280,14,1,1,true);
+// slides
+const sls=[...document.querySelectorAll('#sl .sl')],pv=document.getElementById('pv'),nx=document.getElementById('nx'),ct=document.getElementById('ct');let i=0;
+function show(n){i=n;sls.forEach((s,k)=>s.hidden=k!==i);pv.disabled=i===0;nx.disabled=i===sls.length-1;ct.textContent=`Step ${i+1} of ${sls.length}`}
+pv.onclick=()=>show(i-1);nx.onclick=()=>show(i+1);show(0);
+// form
+const F=document.getElementById('qf'),st=document.getElementById('status');
+F.onsubmit=e=>{e.preventDefault();if(document.getElementById('hp').value)return;
+const req={n:'Enter your name.',em:'Enter a valid email address.',l:'Enter the project location.',d:'Describe the project briefly.'};let ok=true;
+for(const k in req){const f=document.getElementById(k),bad=!f.value.trim()||(k==='em'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.value));document.getElementById('e-'+k).textContent=bad?req[k]:'';f.setAttribute('aria-invalid',bad);if(bad)ok=false}
+if(!ok){st.style.display='block';st.textContent='Please fix the highlighted fields.';return}
+const v=x=>document.getElementById(x).value;
+const body=`Name: ${v('n')}\nCompany: ${v('c')}\nEmail: ${v('em')}\nTel: ${v('t')}\nLocation: ${v('l')}\nService: ${v('s')}\nSize: ${v('a')}\nSchedule: ${v('sc')}\n\n${v('d')}`;
+st.style.display='block';st.textContent='Your email app should open with this request. It has not been sent until you send it from there.';
+location.href='mailto:ara.svy@gmail.com?subject='+encodeURIComponent('Quotation request')+'&body='+encodeURIComponent(body)};
+route();
+</script></body></html>
